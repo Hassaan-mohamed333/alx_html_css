@@ -42,6 +42,21 @@ table {
 }
 th,
 td {
-  border: 1px solid #ddd; /* حدود الخلايا */
-  padding: 12px; /* مساحة داخلية في الخلايا */
+  border: 1px solid #ddd; 
+  padding: 12px; 
+}
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; 
+        padding: 10px; 
+    }
+
+    main {
+        flex-direction: column; 
+    }
+
+    article, aside {
+        flex: none;
+        width: 100%; 
+    }
 }
