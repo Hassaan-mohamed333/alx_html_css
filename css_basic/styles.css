@@ -8,7 +8,28 @@ body {
   color: #333; 
   font-family: Arial, sans-serif;
 }
-
+.main-menu li > a{
+  position: relative;
+}
+.main-menu li > a::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0px;
+  height: 2px;
+  bottom: 0;
+  background: #02011e;
+  transition: 0.5s;
+}
+.main-menu li > a:hover {
+  transform: translateY(-6px);
+  background-color: #eeeeee;
+   color: #3498db;
+}
+.main-menu li > a:hover::before {
+  width: 100%;
+}
 main {
   display: flex;
   flex-direction: row;
