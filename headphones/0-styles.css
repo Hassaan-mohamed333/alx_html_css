@@ -1,0 +1,64 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    /* background-color: #071629; */
+    /* color: #FFFFFF; */
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  /* Base Container Styling */
+.container {
+  width: 90%;            
+  max-width: 1200px;   
+  margin: 0 auto;       
+  padding: 20px;        
+  box-sizing: border-box; 
+}
+
+/* Media Queries for Responsive Design */
+
+/* Extra Small Devices (Phones, <576px) */
+@media (max-width: 575.98px) {
+  .container {
+      width: 95%; 
+      padding: 10px; 
+  }
+}
+
+/* Small Devices (Tablets, 576px to 767px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .container {
+      width: 90%;
+      padding: 15px;
+  }
+}
+
+/* Medium Devices (Desktops, 768px to 991px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .container {
+      width: 85%;
+      padding: 20px;
+  }
+}
+
+/* Large Devices (Desktops, 992px to 1199px) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .container {
+      width: 80%;
+      padding: 20px;
+  }
+}
+
+/* Extra Large Devices (1200px and above) */
+@media (min-width: 1200px) {
+  .container {
+      width: 75%;
+      padding:30px;
+    }
+}
