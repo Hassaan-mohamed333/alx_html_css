@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Hover Effects</title>
+  <style>
+    /* Colors */
+    :root {
+      --red: #E1332D;
+      --white: #fff;
+    }
+
+    /* Base styles */
+    * {
+      box-sizing: border-box;
+      transition: all 0.6s ease;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+    }
+
+    body {
+      background: var(--red);
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+    }
+
+    /* Main wrap */
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      justify-content: center;
+      text-align: center;
+      width: 100%;
+    }
+
+    /* Button wrap */
+    .container {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 1em;
+      text-align: center;
+    }
+
+    h1 {
+      color: var(--white);
+      font-size: 2rem;
+      font-weight: 900;
+      margin-bottom: 2em;
+    }
+
+    p {
+      color: var(--white);
+      font-size: 12px;
+    }
+
+    p a {
+      background: transparent;
+      border-bottom: 1px solid;
+      color: var(--white);
+      text-decoration: none;
+      padding: 0.25em;
+      transition: all 0.3s ease;
+    }
+
+    p a:hover {
+      background: var(--white);
+      color: var(--red);
+    }
+
+    /* Buttons */
+    .btn {
+      color: var(--white);
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 45px;
+      margin-bottom: 2em;
+      max-width: 160px;
+      position: relative;
+      text-decoration: none;
+      text-transform: uppercase;
+      width: 100%;
+    }
+
+    .btn:hover {
+      text-decoration: none;
+    }
+
+    /* Button 4 */
+    .btn-4 {
+      border: 1px solid;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .btn-4 span {
+      z-index: 20;
+      position: relative;
+    }
+
+    .btn-4:after {
+      background: #fff;
+      content: "";
+      height: 155px;
+      left: -75px;
+      opacity: 0.2;
+      position: absolute;
+      top: -50px;
+      transform: rotate(35deg);
+      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+      width: 50px;
+      z-index: -10;
+    }
+
+    .btn-4:hover:after {
+      left: 120%;
+      transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    }
+
+    /* Button 6 (REGISTER FOR FREE) */
+    .register-btn {
+      background: transparent;
+      border: 2px solid var(--white);
+      color: var(--white);
+      padding: 10px 20px;
+      font-size: 18px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.4s ease;
+    }
+
+    .register-btn:hover {
+      background: var(--white);
+      color: var(--red);
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    }
+  </style>
+</head>
+<body>
+  <section class="buttons">
+    <h1>Button Hover Effects</h1>
+    <div class="container">
+      <a href="#" class="btn btn-1">
+        <svg>
+          <rect x="0" y="0" fill="none" width="100%" height="100%" />
+        </svg>
+        Hover
+      </a>
+      <a href="#" class="btn btn-2">Hover</a>
+      <a href="#" class="btn btn-3">Hover</a>
+      <a href="#" class="btn btn-4"><span>Hover</span></a>
+      <a href="#" class="btn btn-5">Hover</a>
+    </div>
+    <div>
+      <button class="register-btn">REGISTER FOR FREE</button>
+    </div>
+    <p>Follow on <a href="https://twitter.com/Dave_Conner" target="_blank">Twitter</a></p>
+  </section>
+</body>
+</html>

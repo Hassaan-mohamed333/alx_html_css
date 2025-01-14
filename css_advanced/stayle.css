@@ -156,7 +156,7 @@ opacity: 0px;
   .hero .container h1 {
     margin-bottom: 20px;
     font-family: Source Sans Pro;
-    font-size: 120px;
+    font-size: 160px;
     font-weight: 700;
     line-height: 150.84px;
     text-align: center;
@@ -192,7 +192,7 @@ opacity: 0px;
   }
   
   .hero button:hover {
-    background: #A15CCC;
+    /* background: #A15CCC; */
   }
   
   /* Pros Section */
@@ -321,13 +321,11 @@ opacity: 0px;
     font-style: italic;
     line-height: 33.6px;
     text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
   }
   
   /* Popular Tutorials Section */
   .popular-section {
-    padding: 50px 20px;
+    /* padding: 50px 20px; */
     text-align: center;
     Height:550px;
     top: 1572px;
@@ -494,7 +492,6 @@ opacity: 0px;
     top: 168px;
     left: 1019px;
     gap: 0px;
-    opacity: 0px;
 
   }
   
@@ -511,28 +508,26 @@ opacity: 0px;
   }
   
   .membership-card h3 {
-    font-family: Source Sans Pro;
+    font-family: 'Source Sans Pro', sans-serif;
     font-size: 18px;
     font-weight: 600;
     line-height: 26px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    
 
   }
   .membership-card p {
-    font-family: Source Sans Pro;
     font-size: 14px;
     font-weight: 400;
     line-height: 26px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+   
     }    
 
     .membership-section button {
       background: #C271FF;
     border: none;
+    margin-top: 2rem;
     color: #FFFFFF;
     padding: 15px 30px;
     font-size: 16px;
@@ -549,17 +544,7 @@ opacity: 0px;
     background-color: #FFFFFF;
     color: #071629;
   }
-  
-  /* .faq-section .container {
-    width: 920px;
-    height: 707px;
-    top: 2678px;
-    left: 249px;
-    gap: 0px;
-    opacity: 0px;
 
-
-  } */
 
   .faq-section h2 {
     font-size: 32px;
@@ -568,39 +553,34 @@ opacity: 0px;
   }
   
   .faq-items {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
+    /* display: grid;
+    grid-template-columns: repeat(2, 1fr); */
+    gap: 40px;
+    align-items: center;
+    justify-items: center;
+    display: flex;  
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    /* flex */
   }
   
   .faq-item {
     background: #F5F5F5;
     padding: 20px;
     border-radius: 10px;
-    /* width: 350px; */
-    height: 242px;
-    top: 465px;
-    left: 570px;
-    gap: 0px;
-    opacity: 0px;
-
-
-    width: 350px;
-height: 242px;
-top: 465px;
-left: 570px;
-gap: 0px;
-opacity: 0px;
-
-
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 48%;
   }
 
   .faq-item  div {
-    width: 330px;
+    /* width: 330px;
     height: 192px;
     top: 50px;
     gap: 0px;
-    opacity: 0px;
+    opacity: 0px; */
 
   }
 
@@ -675,5 +655,20 @@ opacity: 0px;
   
 
 
-
-  
+  .hero button::after{
+  background: #fff;
+    content: "";
+    height: 155px;
+    left: -75px;
+    opacity: 0.2;
+    position: absolute;
+    top: -50px;
+    transform: rotate(35deg);
+    transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+    width: 50px;
+    z-index: -10;
+}
+.hero button::after:hover{
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
