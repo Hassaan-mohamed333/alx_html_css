@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # alx_html_css
 # Headphones Project
 
@@ -15,7 +14,6 @@ This project is a web page implemented from scratch based on a Figma design.
 
 ## How to Run
 1. Clone this repository:
-=======
 # alx_html_css
 # Headphones Project
 
@@ -32,4 +30,3 @@ This project is a web page implemented from scratch based on a Figma design.
 
 ## How to Run
 1. Clone this repository:
->>>>>>> 46331868999fe60bc1b01ca0c89a8393a77e62ea
