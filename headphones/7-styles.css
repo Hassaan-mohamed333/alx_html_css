@@ -1,14 +1,7 @@
-/* General Reset */
-* {
-  /* margin: 0; */
-  padding: 0;
-  box-sizing: border-box;
-}
+
 
 body {
   font-family: "Source Sans Pro", Arial, sans-serif;
-  /* background-color: #071629; */
-  /* color: #FFFFFF; */
   line-height: 1.6 !important;
   overflow-x: hidden !important;
 }
@@ -323,6 +316,7 @@ body {
   margin-block: 50px;
   position: relative;
   background-color: #f4f4f4;
+  row-gap: 20px;
 }
 .what-we-do .part {
   margin-bottom: 30px;
@@ -430,7 +424,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around !important;
-  gap: 15px;
+  gap: 20px !important;
   padding: 10px;
 }
 
@@ -503,15 +497,14 @@ form {
 }
 .form .container form button {
   background-color: var(--primary-color);
-  width: 162px;
-  height: 44px;
-  border-radius: 30px;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  left: 50%;
-  transform: translate(-50%, -50%);
+            border-radius: 30px;
+            padding: 10px 20px !important;
+            margin: auto !important;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
 }
 
 label {
@@ -565,6 +558,7 @@ textarea {
 .social {
   display: flex;
   justify-content: space-evenly;
+  gap: 10px;
 }
 
 .soc {
