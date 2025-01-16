@@ -192,6 +192,17 @@ body {
   position: absolute;
   z-index: 99999;
 }
+.header .container .nav .logo img {
+  animation: bounce 2s infinite;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
 
 .nav .links {
   display: flex;
@@ -238,9 +249,12 @@ body {
   font-family: var(--font-family);
   font-size: 1.2rem;
   transition: color 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 .header .nav ul li a:hover {
   color: var(--primary-color);
+  transform: scale(1.1);
+  opacity: 0.9;
 }
 
 .main-part {
@@ -352,7 +366,12 @@ body {
 }
 .results .icons .icon {
   flex-grow: 1;
-  flex-basis: 207px;
+  flex-basis: 250px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.results .icons .icon:hover {
+  transform: scale(1.1);
+  opacity: 0.9;
 }
 .results .icons .icon p {
   font-family: 14px !important;
@@ -416,10 +435,10 @@ body {
 }
 
 .dark .container .icons2 .icon2 {
-  flex-grow: 1;
+  /* flex-grow: 1; */
   display: flex;
-  flex-basis: 190px;
-  padding: 20px;
+  /* flex-basis: 190px; */
+  padding: 30px;
   text-align: center;
 }
 .dark .container .icons2 .icon2 {
@@ -430,7 +449,7 @@ body {
   background-position: center center;
   display: flex;
   justify-content: space-around !important;
-  width: 190px;
+  width: 236px;
   height: 190px;
 }
 
@@ -664,11 +683,11 @@ textarea {
 
 
 button {
-  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); 
-  box-shadow: 0 0 5px #ff6565,  
-              /* 0 0 15px #ff6565, */
-              /* 0 0 20px #ff6565, */
-              0 0 0px #ff6565;
+  
+  /* box-shadow: 0 0 5px #ff6565,  
+              0 0 15px #ff6565,
+              0 0 20px #ff6565,
+              0 0 0px #ff6565; */
   background-color: transparent; 
   color: #03e9f4; 
   border: 2px solid #ff6565; 
@@ -678,20 +697,22 @@ button {
   cursor: pointer;
   
   text-transform: uppercase;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   animation: pulse 2s infinite;
+
 }
 
 button:hover {
-  box-shadow: 0 0 10px #ff6565,
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); 
+  box-shadow: 0 0 5px #ff6565,
+              0 0 10px #ff6565,
               0 0 20px #ff6565,
-              0 0 40px #ff6565,
-              0 0 200px #ff6565; 
+              0 0 80px #ff6565; 
   color: white; 
   background-color: #ff6565; 
   transition: all 0.3s ease;
+  animation: pulse 2s infinite;
 }
-
 @keyframes pulse {
   0%, 100% {
       box-shadow: 0 0 5px #ff6565,
@@ -706,6 +727,7 @@ button:hover {
                   0 0 200px #ff6565;
   }
 }
+
 button {
   animation: pulse 2s infinite;
 }
