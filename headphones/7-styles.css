@@ -665,10 +665,7 @@ textarea {
 
 button {
   
-  /* box-shadow: 0 0 5px #ff6565,  
-              0 0 15px #ff6565,
-              0 0 20px #ff6565,
-              0 0 0px #ff6565; */
+ 
   background-color: transparent; 
   color: #03e9f4; 
   border: 2px solid #ff6565; 
@@ -696,16 +693,14 @@ button:hover {
 }
 @keyframes pulse {
   0%, 100% {
-      box-shadow: 0 0 0px #ff6565,
-                  0 0 0px #ff6565,
+      box-shadow: 0 0 5px #ff6565,
+                  0 0 px #ff6565,
                   0 0 0px #ff6565,
                   0 0 0px #ff6565;
   }
   50% {
       box-shadow: 0 0 10px #ff6565,
-                  /* 0 0 30px #ff6565, */
-                  /* 0 0 50px #ff6565, */
-                  /* 0 0 80px #ff6565; */
+                
   }
 }
 
