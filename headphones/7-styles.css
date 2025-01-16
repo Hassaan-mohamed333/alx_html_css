@@ -311,12 +311,9 @@ body {
   font-family: var(--font-family);
 }
 .what-we-do {
-  padding: 50px 20px;
   text-align: center;
-  margin-block: 50px;
   position: relative;
   background-color: #f4f4f4;
-  row-gap: 20px;
 }
 .what-we-do .part {
   margin-bottom: 30px;
@@ -348,7 +345,7 @@ body {
   display: flex;
   padding: 50px 20px !important;
   flex-wrap: wrap;
-  column-gap: 10px;
+  gap: 30px;
 }
 .results .icons * {
   flex: 1 1 calc(23.333% - 10px);
@@ -424,8 +421,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around !important;
-  gap: 20px !important;
-  padding: 10px;
+  gap: 30px !important;
 }
 
 .dark .container .icons2 .icon2 {
@@ -470,8 +466,7 @@ form {
   gap: 1.5rem;
   padding: 10px !important;
   border-radius: 20px;
-  border: 1px solid var(--secondary-color);
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+  box-shadow: rgba(77, 75, 75, 0.3) 0px 30px 80px;
 }
 
 .form-container {
@@ -479,8 +474,7 @@ form {
   padding: 2rem;
   border-radius: 10px;
   width: 90%;
-  /* max-width: 400px; */
-  /* padding-left: 33%; */
+  
 }
 
 /* Heading */
@@ -693,8 +687,8 @@ button:hover {
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); 
   box-shadow: 0 0 5px #ff6565,
               0 0 10px #ff6565,
-              0 0 20px #ff6565,
-              0 0 80px #ff6565; 
+              0 0 0px #ff6565,
+              0 0 0px #ff6565; 
   color: white; 
   background-color: #ff6565; 
   transition: all 0.3s ease;
@@ -702,16 +696,16 @@ button:hover {
 }
 @keyframes pulse {
   0%, 100% {
-      box-shadow: 0 0 5px #ff6565,
+      /* box-shadow: 0 0 5px #ff6565,
                   0 0 15px #ff6565,
-                  0 0 25px #ff6565,
+                  0 0 25px #ff6565, */
                   0 0 100px #ff6565;
   }
   50% {
       box-shadow: 0 0 10px #ff6565,
-                  0 0 30px #ff6565,
-                  0 0 50px #ff6565,
-                  0 0 200px #ff6565;
+                  /* 0 0 30px #ff6565, */
+                  /* 0 0 50px #ff6565, */
+                  /* 0 0 80px #ff6565; */
   }
 }
 
